@@ -1,0 +1,27 @@
+@media (min-width: 34em) {
+  nav {
+    .navbar-toggleable-xs {
+      ul {
+        text-align: center;
+        li {
+          float: none !important;
+          display: inline-block;
+          margin: 2vh 0; //was 4rem
+          text-transform: uppercase;
+          a {
+            &:hover {
+              color: #8b6e4a !important;
+              opacity: 0.8;
+            }
+          }
+        }
+        #nav-logo {
+          width: 15%;
+          #westlight {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

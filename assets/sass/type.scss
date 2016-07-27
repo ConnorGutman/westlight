@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Futura';
+  src: url('fonts/Futura.ttc');
+}
+@font-face {
+  font-family: 'Marion';
+  src: url('fonts/Marion.ttc');
+}
+body {
+  font-family: 'Futura', sans-serif;
+  color: #ffffff;
+}
+h1 {
+  font-family: 'Marion', serif;
+}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p {
+  font-family: 'Marion', serif;
+}
+a {
+  color: #ffffff;
+}
+#about {
+  p {
+    text-align: justify;
+  }
+}

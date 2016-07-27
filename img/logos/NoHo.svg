@@ -1,0 +1,36 @@
+<svg width="291.66666" height="76.666664" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata8">image/svg+xml</metadata>
+ <defs>
+  <clipPath clipPathUnits="userSpaceOnUse" id="clipPath18">
+   <path d="m0,57.5l218.75,0l0,-57.5l-218.75,0l0,57.5z" id="path16"/>
+  </clipPath>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,76.666667) ">
+   <g id="g12">
+    <g id="g14" clip-path="url(#clipPath18)">
+     <text font-weight="normal" font-size="35.7211px" font-family="'Baskerville Old Face'" fill="#ffffff" fill-rule="nonzero" stroke="#ffffff" transform="matrix(1,0,0,-1,62.0811,30.5449) " id="text22">
+      <tspan stroke="#ffffff" fill="#ffffff" x="0 26.969431 45.455101 74.496353" y="0" id="tspan20">NoHo</tspan>
+     </text>
+     <text font-weight="normal" font-size="34.565701px" font-family="'Baskerville Old Face'" fill="#ffffff" fill-rule="nonzero" stroke="#ffffff" transform="matrix(1,0,0,-1,1.9033,3.7539) " id="text26">
+      <tspan stroke="#ffffff" fill="#ffffff" x="0" y="0" id="tspan24">H</tspan>
+     </text>
+     <text font-weight="normal" font-size="26.7908px" font-family="'Baskerville Old Face'" fill="#ffffff" fill-rule="nonzero" stroke="#ffffff" transform="matrix(1,0,0,-1,32.1992,3.7539) " id="text30">
+      <tspan stroke="#ffffff" fill="#ffffff" x="0 23.763439 39.650383 57.171566 68.852356 89.280342 109.88247 128.26096 139.94174" y="0" id="tspan28">OSPITALIT</tspan>
+     </text>
+     <text font-weight="normal" font-size="34.565701px" font-family="'Baskerville Old Face'" fill="#ffffff" fill-rule="nonzero" stroke="#ffffff" transform="matrix(1,0,0,-1,192.5762,3.7539) " id="text34">
+      <tspan stroke="#ffffff" fill="#ffffff" x="0" y="0" id="tspan32">Y</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g36">
+    <path fill="#ffffff" stroke="#ffffff" stroke-width="0.75" stroke-miterlimit="10" d="m35.597698,26.042999l150.822,-0.548" id="path38"/>
+   </g>
+  </g>
+ </g>
+</svg>

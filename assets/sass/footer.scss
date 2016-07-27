@@ -1,0 +1,19 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .container {
+    p {
+      font-family: 'Futura', sans-serif;
+      display: inline;
+      color: #ffffff;
+    }
+    .footer-logo {
+      display: inline;
+      float: right;
+      height: 3vh;
+      margin-bottom: 1rem;
+      padding: 0 1%;
+    }
+  }
+}
