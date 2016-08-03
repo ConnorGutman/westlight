@@ -1,3 +1,19 @@
+nav {
+  ul {
+    li {
+      padding: 0 2%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    ul {
+      li {
+        padding: 0 3%;
+      }
+    }
+  }
+}
 @media (min-width: 34em) {
   nav {
     .navbar-toggleable-xs {
@@ -9,6 +25,11 @@
           margin: 2vh 0; //was 4rem
           text-transform: uppercase;
           a {
+            color: #E5E1D7;
+            transition: 0.25s all ease;
+            -webkit-transition: 0.25s all ease;
+            -moz-transition: 0.25s all ease;
+            -o-transition: 0.25s all ease;
             &:hover {
               color: #8b6e4a !important;
               opacity: 0.8;
@@ -17,6 +38,7 @@
         }
         #nav-logo {
           width: 15%;
+          padding: 0;
           #westlight {
             width: 100%;
           }

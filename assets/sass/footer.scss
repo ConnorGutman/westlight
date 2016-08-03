@@ -1,12 +1,27 @@
 footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 100%;
   .container {
     p {
       font-family: 'Futura', sans-serif;
-      display: inline;
       color: #ffffff;
+      @media(min-width: 768px) {
+        display: inline;
+      }
+    }
+    a {
+      transition: 0.25s all ease;
+      -webkit-transition: 0.25s all ease;
+      -moz-transition: 0.25s all ease;
+      -o-transition: 0.25s all ease;
+      &:hover {
+        color: #8b6e4a;
+        text-decoration: none;
+      }
+    }
+    span {
+      width: 100%;
+      background-color: red;
     }
     .footer-logo {
       display: inline;
@@ -16,4 +31,12 @@ footer {
       padding: 0 1%;
     }
   }
+  @media(min-width: 554px) {
+    position: fixed;
+    bottom: 0;
+  }
+}
+.fixed-override {
+  position: fixed;
+  bottom: 0;
 }

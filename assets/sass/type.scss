@@ -12,20 +12,62 @@ body {
 }
 h1 {
   font-family: 'Marion', serif;
+  font-size: 24px;
 }
-h2 {}
-h3 {}
+h2 {
+  font-size: 14px;
+}
+h3 {
+  font-size: 6.25px;
+}
 h4 {}
 h5 {}
 h6 {}
 p {
   font-family: 'Marion', serif;
+  line-height: 1.25;
+  font-size: 16px;
 }
 a {
   color: #ffffff;
+  font-size: 8px;
 }
-#about {
+@media(min-width: 768px) {
+  h1 {
+    font-size: 32.5px;
+  }
+  h2 {
+    font-size: 18.75px;
+  }
+  h3 {
+    font-size: 12.5px;
+  }
+  h4 {}
+  h5 {}
+  h6 {}
+  p {
+    font-size: 20px;
+  }
+  a {
+    font-size: 10px;
+  }
+}
+@media(min-width: 992px) {
+  p {
+    font-size: 23.75px;
+  }
+  a {
+    font-size: 12.5px;
+  }
+}
+#about,
+#events {
   p {
     text-align: justify;
   }
+}
+#menus {
+  h1 {}
+  h2 {}
+  a {}
 }
