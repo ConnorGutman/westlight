@@ -114,6 +114,8 @@ footer .container .footer-logo {
   position: fixed;
   bottom: 0; }
 
+.container-fluid {
+  opacity: 0.75; }
 @media (min-width: 768px) {
   .container-fluid {
     height: 100vh; } }

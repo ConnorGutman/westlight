@@ -2,6 +2,7 @@
 @import 'nav';
 @import 'footer';
 .container-fluid {
+  opacity: 0.75;
   @media(min-width: 768px) {
     height: 100vh;
   }
