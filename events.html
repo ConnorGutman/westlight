@@ -34,7 +34,7 @@
           <a class="nav-link" href="index.html"><img id="westlight" src="img/westlight.svg"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="events.html">Events</a>
+          <a class="nav-link active" href="events.html">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -46,7 +46,7 @@
     </div>
   </nav>
   <!-- Body -->
-  <div class="page-background events-background"></div>
+  <div class="page-background events-background" data-src="img/events-bg.jpg"></div>
   <div id="page-shadow"></div>
   <div class="container-fluid" id="events">
     <div class="row">
@@ -77,6 +77,19 @@
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="js/jquery.imageloader.js"></script>
+  <script>
+  $(function() {
+    $('.page-background').imageloader(
+      {
+        background: true,
+        callback: function (elm) {
+          $(elm).fadeIn();
+        }
+      }
+    );
+  });
+</script>
 </body>
 
 </html>

@@ -10,6 +10,7 @@ footer {
       }
     }
     a {
+      opacity: 0.5;
       transition: 0.25s all ease;
       -webkit-transition: 0.25s all ease;
       -moz-transition: 0.25s all ease;
@@ -26,9 +27,22 @@ footer {
     .footer-logo {
       display: inline;
       float: right;
-      height: 3vh;
+      height: 10px;
       margin-bottom: 1rem;
-      padding: 0 1%;
+      padding: 0 35px 0 0;
+      opacity: 0.5;
+      @media (min-width: 544px) {
+        height: 15px;
+      }
+      @media (min-width: 768px) {
+        height: 20px;
+      }
+      @media (min-width: 992px) {
+        height: 25px;
+      }
+      @media (min-width: 1200px) {
+        height: 30px;
+      }
     }
   }
   @media(min-width: 554px) {

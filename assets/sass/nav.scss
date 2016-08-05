@@ -1,7 +1,12 @@
 nav {
   ul {
     li {
-      padding: 0 2%;
+      margin-left: 0 !important;
+      padding: 0 1.25%;
+      padding-top: 1vh !important;
+      .active {
+        border-top: 2px solid #8b6e4a;
+      }
     }
   }
 }
@@ -9,7 +14,7 @@ nav {
   nav {
     ul {
       li {
-        padding: 0 3%;
+        padding: 0 2.5%;
       }
     }
   }
@@ -37,7 +42,7 @@ nav {
           }
         }
         #nav-logo {
-          width: 15%;
+          width: 188px;
           padding: 0;
           #westlight {
             width: 100%;

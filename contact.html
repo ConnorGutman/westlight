@@ -37,7 +37,7 @@
           <a class="nav-link" href="events.html">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="press.html">Press</a>
@@ -46,7 +46,7 @@
     </div>
   </nav>
   <!-- Body -->
-  <div class="page-background contact-background"></div>
+  <div class="page-background contact-background" data-src="img/contact-bg.jpg"></div>
   <div id="page-shadow"></div>
   <div class="container-fluid" id="contact">
     <div class="row">
@@ -56,10 +56,12 @@
           <h3 class="text-xs-center">HOURS</h3>
           <p class="text-xs-center">4pm - 2am Daily</p>
         </div>
+        <div class="line-sep"></div>
         <div class="col-sm-4">
           <h3 class="text-xs-center">ADDRESS</h3>
           <a href="https://www.google.com/maps/place/The+William+Vale+Hotel/@40.7221136,-73.9593687,17z/data=!4m13!1m7!3m6!1s0x89c25942d4fd21b5:0x8478af1e2b73f606!2s111+N+12th+St,+Brooklyn,+NY+11249!3b1!8m2!3d40.7221096!4d-73.95718!3m4!1s0x89c25942d18e434f:0xcaae4e81d62d5e0d!8m2!3d40.7222827!4d-73.9566913" target="_blank"><p class="text-xs-center">111 N. 12th Street<br> Brooklyn, New York 11249</p></a>
         </div>
+        <div class="line-sep2"></div>
         <div class="col-sm-4">
           <h3 class="text-xs-center">PHONE</h3>
           <a href="tel:7183077100"><p class="text-xs-center">718 307 7100</p></a>
@@ -80,6 +82,19 @@
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="js/jquery.imageloader.js"></script>
+  <script>
+  $(function() {
+    $('.page-background').imageloader(
+      {
+        background: true,
+        callback: function (elm) {
+          $(elm).fadeIn();
+        }
+      }
+    );
+  });
+</script>
 </body>
 
 </html>

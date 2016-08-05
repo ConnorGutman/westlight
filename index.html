@@ -8,6 +8,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Westlight</title>
 
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -46,7 +53,7 @@
     </div>
   </nav>
   <!-- Body -->
-  <div class="page-background home-background"></div>
+  <div class="page-background home-background" data-src="img/home-bg.jpg"></div>
   <div class="container-fluid" id="home">
     <div class="row">
       <div class="col-xs-12">
@@ -69,6 +76,19 @@
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="js/jquery.imageloader.js"></script>
+  <script>
+  $(function() {
+    $('.page-background').imageloader(
+      {
+        background: true,
+        callback: function (elm) {
+          $(elm).fadeIn();
+        }
+      }
+    );
+  });
+</script>
 </body>
 
 </html>

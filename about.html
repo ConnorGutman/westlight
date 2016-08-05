@@ -22,7 +22,7 @@
     <div class="collapse navbar-toggleable-xs" id="top-nav">
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="about.html">About<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="menus.html">Menus</a>
@@ -46,7 +46,7 @@
     </div>
   </nav>
   <!-- Body -->
-  <div class="page-background about-background"></div>
+  <div class="page-background about-background" data-src="img/about-bg.jpg"></div>
   <div id="page-shadow"></div>
   <div class="container-fluid" id="about">
     <div class="row">
@@ -77,6 +77,19 @@
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="js/jquery.imageloader.js"></script>
+  <script>
+  $(function() {
+    $('.page-background').imageloader(
+      {
+        background: true,
+        callback: function (elm) {
+          $(elm).fadeIn();
+        }
+      }
+    );
+  });
+</script>
 </body>
 
 </html>
