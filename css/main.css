@@ -213,10 +213,10 @@ footer .container .footer-logo {
 }
 .contact-background {
   background: url('../img/contact-bg.jpg');
-}
-.press-background {
-  background: url('../img/press-bg.png');
 } */
+.press-background {
+  background: url("../img/press-bg.png"); }
+
 #page-shadow {
   position: fixed;
   top: 0;
