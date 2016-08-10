@@ -8,6 +8,14 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Westlight</title>
 
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png?v=ngGG55m9wR">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=ngGG55m9wR" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v=ngGG55m9wR" sizes="16x16">
+  <link rel="manifest" href="/manifest.json?v=ngGG55m9wR">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=ngGG55m9wR" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico?v=ngGG55m9wR">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -45,20 +53,29 @@
       </ul>
     </div>
   </nav>
+  <!-- Mobile Nav -->
+  <div id="mobileNav" class="mobile-menu-hide">
+    <a id="exitMobileNav" class="center-block" href="#"><img src="img/x.svg"></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="li-active"><a class="active" href="about.html">About</a></li>
+      <li><a href="menus.html">Menus</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="press.html">Press</a></li>
+    </ul>
+  </div>
   <!-- Body -->
   <div class="page-background about-background" data-src="img/about-bg.jpg"></div>
   <div id="page-shadow"></div>
+  <div id="page-shadow2"></div>
   <div class="container-fluid" id="about">
     <div class="row">
       <div class="col-xs-12">
         <h1 class="text-xs-center">ABOUT</h1>
-        <div class="col-xs-12 col-sm-6">
-          <p>This summer, chef Andrew Carmellini and NoHo Hospitality Group open Westlight, a 22nd-floor rooftop bar with sweeping views of New York City atop The William Vale in Williamsburg. At Westlight, head bartender Anne Robinson (Evening Bar, PDT,
-            Booker + Dax) presents a dynamic menu of handcrafted</p>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <p>cocktails, rare spirits, beer and wine, served in a distinctive Brooklyn space. Chef Andrew Carmellini looks to global street food to inspire the cocktail bar’s playful menu, which includes dishes such as Mexican Corn Cone, Charred Octopus Skewers,
-            Chicken Fried Chicken Wings and Duck Carnitas Tacos. </p>
+        <div class="col-xs-12">
+          <p class="center-block text-xs-center about-body">This summer, chef Andrew Carmellini and NoHo Hospitality Group open Westlight, a 22nd-floor rooftop bar with sweeping views of New York City atop The William Vale in Williamsburg. At Westlight, head bartender Anne Robinson (Evening Bar, PDT, Booker + Dax) presents a dynamic menu of handcrafted cocktails, rare spirits, beer and wine, served in a distinctive Brooklyn space.<br><br>Chef Andrew Carmellini looks to global street food to inspire the cocktail bar’s playful menu, which includes dishes such as Mexican Corn Cone, Charred Octopus Skewers, Chicken Fried Chicken Wings and Duck Carnitas Tacos.</p>
         </div>
       </div>
     </div>
@@ -68,10 +85,12 @@
     <div class="container">
       <a class="text-xs-center" href="https://www.google.com/maps/place/The+William+Vale+Hotel/@40.7221136,-73.9593687,17z/data=!4m13!1m7!3m6!1s0x89c25942d4fd21b5:0x8478af1e2b73f606!2s111+N+12th+St,+Brooklyn,+NY+11249!3b1!8m2!3d40.7221096!4d-73.95718!3m4!1s0x89c25942d18e434f:0xcaae4e81d62d5e0d!8m2!3d40.7222827!4d-73.9566913"
         target="_blank">111 N. 12TH STREET, BROOKLYN, NY 11249</a>
-      <img class="footer-logo pull-right" src="img/logos/MisterDips.svg">
+      <span>
+      <img class="footer-logo pull-right" src="img/logos/MisterDips.png">
       <img class="footer-logo pull-right" src="img/logos/Leuca.svg">
       <a href="http://www.thewilliamvale.com/" target="_blank"><img class="footer-logo pull-right" src="img/logos/WV.svg"></a>
       <a href="http://www.nhgnyc.com/" target="_blank"><img class="footer-logo pull-right" src="img/logos/NoHo.svg"></a>
+    </span>
     </div>
   </footer>
   <!-- jQuery first, then Bootstrap JS. -->
@@ -79,17 +98,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script src="js/jquery.imageloader.js"></script>
   <script>
-  $(function() {
-    $('.page-background').imageloader(
-      {
+  $('.navbar-toggler').click(function(){
+    $('#mobileNav').removeClass('mobile-menu-hide');
+  });
+  $('#exitMobileNav').click(function(){
+    $('#mobileNav').addClass('mobile-menu-hide');
+  });
+  </script>
+  <script>
+    $(function() {
+      $('.page-background').imageloader({
         background: true,
-        callback: function (elm) {
+        callback: function(elm) {
           $(elm).fadeIn();
         }
-      }
-    );
-  });
-</script>
+      });
+    });
+  </script>
 </body>
 
 </html>

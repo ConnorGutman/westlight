@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Futura';
-  src: url('fonts/Futura.ttc');
+  src: url('fonts/Futura2.ttf');
 }
 @font-face {
   font-family: 'Marion';
@@ -11,9 +11,10 @@ body {
   color: #ffffff;
 }
 h1 {
-  font-family: 'Marion', serif;
+  font-family: 'Futura', sans-serif;
   font-size: 24px;
   letter-spacing: 1pt;
+  font-weight: 600;
 }
 h2 {
   font-size: 14px;
@@ -75,11 +76,12 @@ a {
 nav {
   letter-spacing: 1pt;
 }
-#about,
-#events {
-  p {
-    text-align: justify;
+#about, #events {
+  .col-xs-12 {
   }
+  p {
+    white-space: pre-wrap;
+    }
 }
 #menus {
   h1 {}
@@ -109,4 +111,29 @@ nav {
 }
 footer {
   letter-spacing: 1pt;
+}
+#mobileNav {
+  ul {
+    list-style: none;
+    li {
+      font-family: 'Futura' sans-serif;
+      line-height: 25px;
+      letter-spacing: 2pt;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      a {
+        text-decoration: none;
+        font-size: 12.5px;
+        transition: 0.25s all ease;
+        -webkit-transition: 0.25s all ease;
+        -moz-transition: 0.25s all ease;
+        -o-transition: 0.25s all ease;
+        &:hover {
+          color: #8b6e4a !important;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
 }

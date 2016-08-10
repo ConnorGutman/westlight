@@ -1,12 +1,21 @@
 nav {
+  #top-nav {
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
   ul {
     li {
       margin-left: 0 !important;
-      padding: 0 1.25%;
-      padding-top: 1vh !important;
+      padding: 1vh 1.25%;
       .active {
+        line-height: 34px;
         border-top: 2px solid #8b6e4a;
       }
+    }
+    #nav-logo {
+      margin-left: 1.25% !important;
+      margin-right: 1.25% !important;
     }
   }
 }
@@ -15,6 +24,10 @@ nav {
     ul {
       li {
         padding: 0 2.5%;
+      }
+      #nav-logo {
+        margin-left: 2.5% !important;
+        margin-right: 2.5% !important;
       }
     }
   }
@@ -27,7 +40,8 @@ nav {
         li {
           float: none !important;
           display: inline-block;
-          margin: 2vh 0; //was 4rem
+          margin-top: 2vh;
+          margin-bottom: 2vh;
           text-transform: uppercase;
           a {
             color: #E5E1D7;
@@ -51,4 +65,52 @@ nav {
       }
     }
   }
+}
+#mobileNav {
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 2000;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  #exitMobileNav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin-top: 5vh;
+  }
+  ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    padding: 0;
+    .li-active {
+      margin-top: 20px;
+    }
+    li {
+      .active {
+        padding-top: 10px;
+        border-top: 2px solid #8b6e4a;
+      }
+    }
+  }
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-menu-hide {
+  z-index: -1 !important;
+  opacity: 0 !important;
 }
