@@ -76,12 +76,12 @@ a {
 nav {
   letter-spacing: 1pt;
 }
-#about, #events {
-  .col-xs-12 {
-  }
+#about,
+#events {
+  .col-xs-12 {}
   p {
     white-space: pre-wrap;
-    }
+  }
 }
 #events {
   h1 {
@@ -118,6 +118,23 @@ nav {
 #contact {
   h3 {
     letter-spacing: 2pt;
+  }
+  .row {
+    .col-xs-12 {
+      .col-sm-4 {
+        &:nth-of-type(1) {
+          p {
+            font-size: 13px;
+            @media(min-width: 768px) {
+              font-size: 17px;
+            }
+            @media(min-width: 992px) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 footer {

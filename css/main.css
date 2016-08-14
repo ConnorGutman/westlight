@@ -88,6 +88,14 @@ nav {
 
 #contact h3 {
   letter-spacing: 2pt; }
+#contact .row .col-xs-12 .col-sm-4:nth-of-type(1) p {
+  font-size: 13px; }
+@media (min-width: 768px) {
+  #contact .row .col-xs-12 .col-sm-4:nth-of-type(1) p {
+    font-size: 17px; } }
+@media (min-width: 992px) {
+  #contact .row .col-xs-12 .col-sm-4:nth-of-type(1) p {
+    font-size: 18px; } }
 
 footer {
   letter-spacing: 1pt; }
@@ -117,21 +125,39 @@ footer {
     display: none; } }
 nav ul li {
   margin-left: 0 !important;
-  padding: 1vh 1.25%; }
+  padding: 1vh 0.56%; }
 nav ul li .active {
   line-height: 34px;
   border-top: 2px solid #8b6e4a; }
 nav ul #nav-logo {
+  width: 123px !important;
   visibility: hidden;
-  margin-left: 1.25% !important;
-  margin-right: 1.25% !important; }
+  margin-left: 0.56% !important;
+  margin-right: 0.56% !important; }
+nav ul #reservations {
+  border: 2px solid #8b6e4a; }
 
+@media (min-width: 660px) {
+  nav ul li {
+    padding: 0 0.96%; }
+  nav ul #nav-logo {
+    width: 118px !important;
+    margin-left: 0.96% !important;
+    margin-right: 0.96% !important; } }
 @media (min-width: 768px) {
   nav ul li {
-    padding: 0 2.5%; }
+    padding: 0 1.66%; }
   nav ul #nav-logo {
-    margin-left: 2.5% !important;
-    margin-right: 2.5% !important; } }
+    width: 118px !important;
+    margin-left: 1.66% !important;
+    margin-right: 1.66% !important; } }
+@media (min-width: 992px) {
+  nav ul li {
+    padding: 0 1.46%; }
+  nav ul #nav-logo {
+    width: 188px !important;
+    margin-left: 1.46% !important;
+    margin-right: 1.46% !important; } }
 @media (min-width: 34em) {
   nav .navbar-toggleable-xs ul {
     text-align: center; }
@@ -151,7 +177,6 @@ nav ul #nav-logo {
     color: #8b6e4a !important;
     opacity: 0.8; }
   nav .navbar-toggleable-xs ul #nav-logo {
-    width: 188px;
     padding: 0; }
   nav .navbar-toggleable-xs ul #nav-logo #westlight {
     width: 100%; } }
@@ -211,15 +236,32 @@ footer .container a {
   transition: 0.25s all ease;
   -webkit-transition: 0.25s all ease;
   -moz-transition: 0.25s all ease;
-  -o-transition: 0.25s all ease; }
+  -o-transition: 0.25s all ease;
+  /*  &:nth-of-type(1) {
+      @media(max-width: 768px) {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        bottom: 8vh;
+      }
+    } */ }
 footer .container a:hover {
   color: #8b6e4a;
   text-decoration: none; }
+footer .container .test {
+  display: inline; }
+footer .container .test a {
+  display: inline; }
 @media (max-width: 768px) {
-  footer .container a:nth-of-type(1) {
+  footer .container .test {
     position: absolute;
-    width: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     text-align: center;
     bottom: 8vh; } }
 @media (max-width: 768px) {
@@ -265,6 +307,21 @@ footer .container .footer-logo {
 .fixed-override {
   position: fixed;
   bottom: 0; }
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
+  object-fit: cover;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity; }
 
 .container-fluid {
   opacity: 0.75; }

@@ -1,0 +1,24 @@
+<svg width="142.46667" height="142.46667" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata8">image/svg+xml</metadata>
+ <defs>
+  <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20">
+   <path d="m0,1068.53l0,-1068.53l1068.53,0l0,1068.53l-1068.53,0z" id="path18"/>
+  </clipPath>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,142.46667) ">
+   <g id="g12" transform="scale(0.10000000149011612) ">
+    <g id="g14">
+     <g id="g16" clip-path="url(#clipPath20)">
+      <path fill="#8b6e4a" fill-rule="nonzero" d="m1068.53,914.562l0,153.968l-220.288,0l-367.492,-304.846l-480.75,0l0,-153.973l1068.53,0l0,153.973l-343.479,0l182.285,150.878l161.194,0zm-1068.53,-609.695l1068.53,0l0,153.973l-1068.53,0l0,-153.973zm0,-304.867l1068.53,0l0,153.973l-1068.53,0l0,-153.973zm626.008,1068.53l-626.008,0l0,-153.968l440.406,0l185.602,153.968" id="path22"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

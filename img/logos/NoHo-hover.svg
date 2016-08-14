@@ -1,0 +1,36 @@
+<svg width="291.66666" height="76.666664" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata8">image/svg+xml</metadata>
+ <defs>
+  <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+   <path id="path16" d="m0,57.5l218.75,0l0,-57.5l-218.75,0l0,57.5z"/>
+  </clipPath>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="293.66666" height="78.666664" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="matrix(1.3333333,0,0,-1.3333333,0,76.666667) " id="g10">
+   <g id="g12">
+    <g clip-path="url(#clipPath18)" id="g14">
+     <text id="text22" transform="matrix(1,0,0,-1,62.0811,30.5449) " stroke="#8b6e4a" fill-rule="nonzero" fill="#8b6e4a" font-family="'Baskerville Old Face'" font-size="35.7211px" font-weight="normal">
+      <tspan id="tspan20" y="0" x="0 26.969431 45.455101 74.496353" fill="#8b6e4a" stroke="#8b6e4a">NoHo</tspan>
+     </text>
+     <text id="text26" transform="matrix(1,0,0,-1,1.9033,3.7539) " stroke="#8b6e4a" fill-rule="nonzero" fill="#8b6e4a" font-family="'Baskerville Old Face'" font-size="34.565701px" font-weight="normal">
+      <tspan id="tspan24" y="0" x="0" fill="#8b6e4a" stroke="#8b6e4a">H</tspan>
+     </text>
+     <text id="text30" transform="matrix(1,0,0,-1,32.1992,3.7539) " stroke="#8b6e4a" fill-rule="nonzero" fill="#8b6e4a" font-family="'Baskerville Old Face'" font-size="26.7908px" font-weight="normal">
+      <tspan id="tspan28" y="0" x="0 23.763439 39.650383 57.171566 68.852356 89.280342 109.88247 128.26096 139.94174" fill="#8b6e4a" stroke="#8b6e4a">OSPITALIT</tspan>
+     </text>
+     <text id="text34" transform="matrix(1,0,0,-1,192.5762,3.7539) " stroke="#8b6e4a" fill-rule="nonzero" fill="#8b6e4a" font-family="'Baskerville Old Face'" font-size="34.565701px" font-weight="normal">
+      <tspan id="tspan32" y="0" x="0" fill="#8b6e4a" stroke="#8b6e4a">Y</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g36">
+    <path id="path38" d="m35.5977,26.043l150.822,-0.548" stroke-miterlimit="10" stroke-width="0.75" stroke="#8b6e4a" fill="#8b6e4a"/>
+   </g>
+  </g>
+ </g>
+</svg>

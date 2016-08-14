@@ -7,16 +7,34 @@ nav {
   ul {
     li {
       margin-left: 0 !important;
-      padding: 1vh 1.25%;
+      padding: 1vh 0.56%;
       .active {
         line-height: 34px;
         border-top: 2px solid #8b6e4a;
       }
     }
     #nav-logo {
+      width: 123px !important;
       visibility: hidden;
-      margin-left: 1.25% !important;
-      margin-right: 1.25% !important;
+      margin-left: 0.56% !important;
+      margin-right: 0.56% !important;
+    }
+    #reservations {
+      border: 2px solid #8b6e4a;
+    }
+  }
+}
+@media (min-width: 660px) {
+  nav {
+    ul {
+      li {
+        padding: 0 0.96%;
+      }
+      #nav-logo {
+        width: 118px !important;
+        margin-left: 0.96% !important;
+        margin-right: 0.96% !important;
+      }
     }
   }
 }
@@ -24,11 +42,26 @@ nav {
   nav {
     ul {
       li {
-        padding: 0 2.5%;
+        padding: 0 1.66%;
       }
       #nav-logo {
-        margin-left: 2.5% !important;
-        margin-right: 2.5% !important;
+        width: 118px !important;
+        margin-left: 1.66% !important;
+        margin-right: 1.66% !important;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    ul {
+      li {
+        padding: 0 1.46%;
+      }
+      #nav-logo {
+        width: 188px !important;
+        margin-left: 1.46% !important;
+        margin-right: 1.46% !important;
       }
     }
   }
@@ -57,7 +90,6 @@ nav {
           }
         }
         #nav-logo {
-          width: 188px;
           padding: 0;
           #westlight {
             width: 100%;
