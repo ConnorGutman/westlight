@@ -1,25 +1,35 @@
 @import 'type';
 @import 'nav';
 @import 'footer';
-
-
 video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100vh;
-    z-index: -100;
-    object-fit: cover;
-    transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
+  object-fit: cover;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
-
-
+@media(max-width: 768px) {
+  #bgvid {
+    display: none;
+  }
+  .home-background {
+    display: block !important;
+  }
+}
+.home-background {
+  background: url("../img/home-bg.jpg");
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
 .container-fluid {
   opacity: 0.75;
   @media(min-width: 768px) {
@@ -56,9 +66,6 @@ video {
   background-position: center center;
 }
 /*
-.home-background {
-  background: url('../img/home-bg.jpg');
-}
 .about-background {
   background: url('../img/about-bg.jpg');
 }
@@ -125,7 +132,7 @@ video {
   }
   .about-body {
     @media(min-width:768px) {
-    width: 68ch;
+      width: 68ch;
     }
   }
 }
@@ -160,10 +167,10 @@ video {
   .events-body {
     margin-bottom: 25px;
     @media(min-width:768px) {
-    width: 68ch;
-    &:nth-of-type(1) {
-      width: 67ch;
-    }
+      width: 68ch;
+      &:nth-of-type(1) {
+        width: 67ch;
+      }
     }
   }
   .book-event {

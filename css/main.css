@@ -323,6 +323,18 @@ video {
   background-size: cover;
   transition: 1s opacity; }
 
+@media (max-width: 768px) {
+  #bgvid {
+    display: none; }
+
+  .home-background {
+    display: block !important; } }
+.home-background {
+  background: url("../img/home-bg.jpg"); }
+@media (min-width: 768px) {
+  .home-background {
+    display: none; } }
+
 .container-fluid {
   opacity: 0.75; }
 @media (min-width: 768px) {
@@ -356,9 +368,6 @@ video {
   background-position: center center; }
 
 /*
-.home-background {
-  background: url('../img/home-bg.jpg');
-}
 .about-background {
   background: url('../img/about-bg.jpg');
 }

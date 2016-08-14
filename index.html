@@ -78,6 +78,7 @@
   <source src="img/westlight.webm" type="video/webm">
   <source src="img/westlight.mp4" type="video/mp4">
   </video>
+  <div class="page-background home-background" data-src="img/home-bg.jpg"></div>
   <div class="container-fluid" id="home">
     <div class="row">
       <div class="col-xs-12">
@@ -135,16 +136,6 @@
     });
     $('#exitMobileNav').click(function() {
       $('#mobileNav').addClass('mobile-menu-hide');
-    });
-  </script>
-  <script>
-    $(function() {
-      $('.page-background').imageloader({
-        background: true,
-        callback: function(elm) {
-          $(elm).fadeIn();
-        }
-      });
     });
   </script>
   <script>
